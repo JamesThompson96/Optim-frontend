@@ -145,6 +145,9 @@ export const deleteTaskComment = (commentId, token) =>
 export const getTaskActivity = (taskId, token) =>
   request(`/tasks/${taskId}/activity`, { token });
 
+export const getAnalytics = (projectId, token) =>
+  request(`/projects/${projectId}/analytics`, { token });
+
 export const getProjectMembers = (projectId, token) =>
   request(`/projects/${projectId}/members`, { token });
 
